@@ -1,3 +1,4 @@
+//initalises the use of firebase and firestore
 var admin = require("firebase-admin");
 
 var serviceAccount = require("./personal-nodejs-project-firebase-adminsdk-5sta1-aeccb8781a.json");

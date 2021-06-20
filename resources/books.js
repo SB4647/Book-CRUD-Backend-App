@@ -1,5 +1,8 @@
+//import data validation rule properties from ../rules/books.js
 const { rules } = require("../rules/books");
+//import data validate method from ../utils/validation.js
 const { validate } = require("../utils/validation");
+//import express function.
 const express = require("express");
 
 const Book = require("../models/model");

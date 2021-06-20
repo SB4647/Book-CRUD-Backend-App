@@ -1,4 +1,3 @@
-
 const validate = (body, rules, strict = true) => {
     let validatedData = {};
     let errors = [];
@@ -14,7 +13,7 @@ const validate = (body, rules, strict = true) => {
         if (!validationObject.validate(body[attributeName])) {
             errors.push({
                 field: attributeName,
-                error: validationObject.error
+                error: validationObject.error,
             });
 
             continue;
@@ -24,8 +23,8 @@ const validate = (body, rules, strict = true) => {
     }
 
     return [validatedData, errors];
-}
+};
 
 module.exports = {
-    validate
+    validate,
 };

@@ -1,3 +1,4 @@
+//Rules used for data validation
 const rules = [
     {
         attributeName: "id",

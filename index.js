@@ -20,10 +20,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors({ allow: true }));
 
+//enable express app to use endpoints defined in ./resources/books.js
 const books = require("./resources/books");
-
 app.use("/books", books);
 
+//enable server to listen for client data on port 3333
 app.listen(3333, () => {
     console.log("Server is running on localhost:3333");
 });
